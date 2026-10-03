@@ -1,0 +1,382 @@
+/* =========================================================
+   HELP & SUPPORT PAGE
+========================================================= */
+
+/* ---------- Page Header ---------- */
+
+.page-header {
+  padding: 150px 0 60px;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(224, 38, 63, 0.14),
+      transparent 65%
+    );
+}
+
+.page-header .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header .eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #e0263f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  margin: 0 0 15px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.page-header p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: #a8a8a8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ---------- Help Search ---------- */
+
+/* ---------- Help Search ---------- */
+
+.help-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 800px;
+  margin: 45px auto;
+}
+
+.help-search input {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  height: 52px;
+  box-sizing: border-box;
+
+  padding: 15px 18px;
+
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+
+  background: #151515;
+  color: #fff;
+
+  font-size: 15px;
+}
+
+.help-search input::placeholder {
+  color: #777;
+}
+
+.help-search input:focus {
+  border-color: #e0263f;
+  box-shadow: 0 0 0 3px rgba(224, 38, 63, 0.12);
+}
+
+
+/* Search Button */
+
+.help-search .btn {
+  flex: 0 0 auto;
+  width: auto !important;
+  min-width: 120px;
+  height: 52px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #e0263f;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #c91f36;
+  transform: translateY(-2px);
+}
+
+
+/* ---------- Help Topics ---------- */
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 30px 0 70px;
+}
+
+.help-topic {
+  padding: 30px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background: #151515;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.help-topic:hover {
+  border-color: #e0263f;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.help-topic > i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: rgba(224, 38, 63, 0.12);
+  color: #e0263f;
+  font-size: 23px;
+}
+
+.help-topic h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.help-topic p {
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ---------- FAQ Heading ---------- */
+
+
+
+/* ---------- FAQ Title ---------- */
+
+.faq-title {
+  display: block;
+  width: 100%;
+  margin: 70px auto 35px;
+  text-align: center !important;
+}
+
+.faq-title h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 !important;
+
+  text-align: center !important;
+}
+
+
+/* ---------- FAQ List ---------- */
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.faq-item {
+  padding: 22px 25px;
+  margin-bottom: 15px;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  background: #151515;
+  transition: 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #e0263f;
+}
+
+.faq-item h4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.faq-item h4 i {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #e0263f;
+}
+
+.faq-item p {
+  margin: 0;
+  padding-left: 28px;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ---------- Contact Support ---------- */
+
+.contact-support {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 45px 30px;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  background: #151515;
+  text-align: center;
+}
+
+.contact-support h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.contact-support > p {
+  margin: 0 0 25px;
+  color: #999;
+  line-height: 1.6;
+}
+
+.contact-support .btn {
+  display: inline-flex;
+  width: auto !important;
+  min-width: 180px;
+  padding: 14px 30px;
+  margin-bottom: 30px;
+}
+
+
+/* ---------- Contact Methods ---------- */
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #292929;
+}
+
+.contact-methods > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.contact-methods i {
+  color: #e0263f;
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .help-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-header h1 {
+    font-size: 40px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .page-header {
+    padding: 120px 20px 45px;
+  }
+
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .page-header p {
+    font-size: 15px;
+  }
+
+  .help-search {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+
+  .help-search input {
+    box-sizing: border-box;
+  }
+
+  .help-search .btn {
+    width: 100%;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .faq-list {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .faq-item {
+    padding: 18px;
+  }
+
+  .faq-item h4 {
+    font-size: 15px;
+  }
+
+  .faq-item p {
+    padding-left: 0;
+  }
+
+  .contact-support {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 35px 20px;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,166 @@
+/* =========================================
+   MOVIE LARGE CARD ONLY
+   ========================================= */
+
+.movie-card-lg {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  padding: 24px;
+  margin-bottom: 26px;
+
+  transition: var(--transition);
+}
+
+.movie-card-lg:hover {
+  border-color: rgba(224, 38, 63, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ---------- Movie Poster ---------- */
+
+.movie-card-lg .poster-wrap {
+  border-radius: var(--radius);
+  aspect-ratio: 2 / 3;
+
+  overflow: hidden;
+}
+
+.movie-card-lg .poster-wrap img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: var(--transition);
+}
+
+.movie-card-lg:hover .poster-wrap img {
+  transform: scale(1.05);
+}
+
+
+/* ---------- Movie Information ---------- */
+
+.movie-card-lg .info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ---------- Movie Title ---------- */
+
+.movie-card-lg h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 8px;
+}
+
+
+/* ---------- Movie Meta ---------- */
+
+.movie-card-lg .card-meta {
+  font-size: 13.5px;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  color: var(--text-muted);
+}
+
+.movie-card-lg .card-meta span:not(:last-child)::after {
+  content: "•";
+
+  margin-left: 8px;
+
+  color: var(--border);
+}
+
+
+/* ---------- Description ---------- */
+
+.movie-card-lg p.desc {
+  color: var(--text-muted);
+
+  font-size: 14.5px;
+
+  margin-bottom: 20px;
+
+  max-width: 560px;
+
+  line-height: 1.6;
+}
+
+
+/* ---------- Actions ---------- */
+
+.movie-card-lg .actions {
+  margin-top: auto;
+
+  display: flex;
+  gap: 14px;
+}
+
+
+/* ---------- View Details Button ---------- */
+
+.movie-card-lg .btn-sm {
+  width: fit-content;
+  padding: 10px 18px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+@media (max-width: 860px) {
+  .movie-card-lg {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-card-lg .poster-wrap {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-card-lg {
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .movie-card-lg h3 {
+    font-size: 25px;
+  }
+
+  .movie-card-lg p.desc {
+    font-size: 14px;
+  }
+}
+/* ---------- Center Page Header ---------- */
+.page-header {
+    text-align: center;
+}
+
+.page-header .eyebrow {
+    padding-left: 0;
+}
+
+.page-header h1 {
+    text-align: center;
+}
+
+.page-header p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

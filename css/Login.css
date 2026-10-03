@@ -1,0 +1,267 @@
+/* =========================
+   LOGIN PAGE CSS
+   ========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 13, 0.4),
+      rgba(10, 10, 13, 0.96)
+    ),
+    url('https://picsum.photos/seed/cinema-auth/1800/1200');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px 60px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(17, 17, 20, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-soft);
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  margin-bottom: 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.auth-logo i {
+  color: #e50914;
+  font-size: 23px;
+}
+
+.logo-cine {
+  color: #f5f5f7;
+}
+
+.logo-verse {
+  color: #e50914;
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0 30px;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--red-accent);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.18);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 0.84rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.checkbox-row input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--red-accent);
+}
+
+.forgot-link {
+  color: var(--red-accent);
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.auth-switch a {
+  color: var(--red-accent);
+  font-weight: 700;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.4px;
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--red-accent);
+  color: #fff;
+  box-shadow: 0 4px 18px var(--red-glow);
+}
+
+.btn-primary:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px var(--red-glow);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+}
+/* Login page red links/buttons */
+
+.auth-card .btn-primary {
+  background: #e50914;
+  color: #fff;
+}
+
+.auth-card .btn-primary:hover {
+  background: #b00610;
+}
+
+/* Forgot Password */
+.auth-card .forgot-link {
+  color: #e50914 !important;
+}
+
+.auth-card .forgot-link:hover {
+  color: #ff1a25 !important;
+  text-decoration: underline;
+}
+
+/* Sign Up */
+.auth-card .auth-switch a {
+  color: #e50914 !important;
+}
+
+.auth-card .auth-switch a:hover {
+  color: #ff1a25 !important;
+  text-decoration: underline;
+}
+.nav-login {
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-login.active {
+  color: #f5f5f7;
+}
+
+.nav-login.active::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -10px;
+
+  height: 3px;
+  background: #e50914;
+
+  border-radius: 2px;
+}
+
+.auth-message {
+  margin: -6px 0 18px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.auth-message-error {
+  color: #ffb4b8;
+  background: rgba(229, 9, 20, 0.14);
+  border: 1px solid rgba(229, 9, 20, 0.45);
+}
+
+.auth-card button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
